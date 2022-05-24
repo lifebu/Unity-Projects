@@ -1,0 +1,26 @@
+
+
+Done Since last Push:
+
+
+
+- Use an Enum and not an String for the different kinds of Platoon Callbacks for the MessageQueue (see FSM)
+- uiScaling is weird.
+- have a UnitUI class and it has it's own fsm?
+	- This Class may hold all the logic for updating the unitUI bases on the Unit's state?
+- Implement the Platoon-System (Trivial Boid) (Messages)
+	- Try some Boiding for the Units!
+	- Test it with way more Units (15 vs. 15?)
+- Get 3 Unit Archetypes to test Platoon
+- UI at the Ant-Hive to create new Units (and decrease Food)
+- Food-Places to collect Food
+- Workers
+- Change Input querry#s to use the Unity Input Manager
+- Platoons: Formation Slots? Every Unit has a specified Formation Slot? and then the Unit in the Slot is moved?
+
+
+Quality of Life:
+- It's weird that everytime i add a Unit I have to add the UI to the script public variable "uiCanvas".
+	- As the UI is a unique think this might be able to be added via script not editor.
+- The UnitUI Corrently only works iff the anchorpoint of it's parent is in the bottom-left corner. should compensate for the offset of the parents
+- 

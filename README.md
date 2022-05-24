@@ -56,5 +56,11 @@ Exported builds can be found in the `builds` directory. It includes windows expo
 
 ## Sources
 - [Tiled](https://www.mapeditor.org/): Used to create 2D tilemaps.
-- [Unity Engine](https://unity.com/): Used to create test projects.
+- [Unity Engine](https://unity.com/): Used to create test projects. All versions were tested with Unity 2019.4.39f1.
 - [Tiled2Unity](https://seanba.com/supertiled2unity.html): To automatically import maps created with Tiled.
+  
+### Ocean's Solitude
+- [Ludum Dare 29: Deep Blue Home by Jools64](https://web.archive.org/web/20170703054547/http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=17060): Used some of the assets for testing. A playable version of Deep Blue Home can still be found at [Newgrounds](https://www.newgrounds.com/portal/view/638327)
+
+### RTS Prototype
+- Empire of the Ants, Microids, 2000: Some sounds and music were recorded from the game for testing purposes.
