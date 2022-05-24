@@ -1,0 +1,68 @@
+- General Syntax:
+	- 'enim:darkfairy;20r5,50r1.5'
+	'enim:' Function
+	'darkfairy' Single Parameter
+	';' Parameter Seperator
+	'20R5,50R1' Array Parameter (multiples of the same information)
+	'.5' Linknumber-Parameter (must be greater than 0)
+
+- Nullparamter: '0x0'
+	- will use the standard value for parameters
+	- not always valid parameter.
+
+- Import Procedure:
+	- 1st: Clear Hierarchy.
+	- 2nd: Insert all Commands of the Level-Hierarchie into a Doubly-Linked-List with the information: {String, Transform}.
+	A Object Name qualifies as a command if it includes '.' ',' ';' ':'.
+	Insert these commands sorted by the linknumber increasing (last entries are those who doesn't have a link number).
+	- 3rd: Check all Commands for syntax Errors
+	- 4th: Check all Commands for logic Errors. The Function defines what parameters needs to be used an how these
+	are encoded. It also determines if the Linknumber-Parameter is needed. Furthermore it states if the Nullparameter
+	can be used for any given function-parameter.
+	- 5th: Execute these Commands on an per Object Basis.
+	- 6th: Execute the Linking Phase. Adding References for some of the Scripts to other objects so that these Objects
+	work correctly.
+
+- Functions:
+	- 'enim:': Spawn an Enemy hier
+		- 1st Param: What enemy
+			- 'darkfairy' -> a darkfairy
+		- 2nd Param: Drops with Syntax xyz, with z,x?N y?Alphabet.
+			- '30r5' -> With a chance of 30% a 5-Rupee will drop
+			- All these chances can't be higher than 100%
+			- Nullparameter is valid.
+		- 3rd Param: Linkparameter
+			- For Linking a Door or a key with a set of enemies, see door function for more infos. Is optional
+	- 'rup:': Spawn an Rupee on the Map here
+		- 1st Param: Amount of Rupees. Only valid numbers are: 1 (Green), 5 (Blue), 20 (Red), 50, 100, 300
+			- '5' -> 5 Rupees
+	- 'switch:': This is a switch
+		- 1st Param: What the switch is connected to
+			- Values: 'd': Door
+		- 2nd Param: Linkparameter
+			- As a switch needs to be linked to do something.
+	- 'door:': This is a door
+		- 1st Param: The Direction of the Door, for the graphic
+			- 'n', 'e', 's', 'w'
+		- 2nd Param: What causes the door to open:
+			- 's': switch, 'sk': small key, 'bk': bosskey, 'enem': enemies
+		- 3rd Param: Linkparameter
+			- For Linking what causes it to open.
+	- 'chest': This is a chest
+		- 1st Param: The size of the chest
+			- 'small', 'large'
+		- 2nd Param: What it contains
+			- 'key', 'r5': Rupees (see rup for more info)
+		- 3rd Param: spawn condition
+			- 'enim'
+			- Nullparameter possible to let it spawn directly
+		- 4th Param: Linkparameter
+			- Linking the spawn condition if it has any.
+	- 'skey': A small key that spawns in the dungeon 
+		- 1st Param: spawn condition
+			- 'enim'
+			- Nullparameter possible to let it spawn directly
+		- 2nd Param: Linkparameter
+			- Linking the spawn condition is if it has any
+
+
