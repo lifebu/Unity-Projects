@@ -19,40 +19,60 @@ Collection of small Unity test projects I created to learn the engine between 20
 This includes: 
 - *Ocean's Solitude*: Controlling a small fish in a 2D level created with [Tiled](https://www.mapeditor.org/) where the player needs to flee from an enemy fish using abilities.
 - *RTS Prototype*: Controlling multiple units via a unit statemachine and simple UI with a few enemy units to fight.
-- *ZDungeon*: Zelda-like dungeons created with [Tiled](https://www.mapeditor.org/). Simple 2D character movement, sword fighting, keys, switches and doors.
+
+**Note**: These experiments are old and do not truly represent my current skillset for designing and implementing code. It was uploaded and published to show my previous work as part of my résumé.
 
 ## Technologies Used
+- Unity: 2019.4.39f1
 
 ## How To Run
-1. Requirements:
-
-2. Exported Builds:
+1. Exported Builds:
 Exported builds can be found in the `builds` directory. It includes windows exports for each projects. 
+
+### Controls
+*Ocean's Solitude*:
+WASD: Move
+Shift: Dash
+Q: Inkcloud ability
+E: Inkbomb ability
+
+*RTS Prototype*:
+Left-Mouse Button: Select units, hold to create selection border.
+Right Mouse Button: Deselect units
+A: Attack Move (move to position, attack all enemies on the way).
+S: Stop current command
+H: Hold position
+P: Patrol between two points
+M: Move to position
+Escape: Open menu to quit.
 
 ## Illustrations
 ### Ocean's Solitude
+Player character, functioning UI and the enemy.
+![Player](./repo/images/oceans_solitude_1.png)
+
+Using an ability.
+![Ability](./repo/images/oceans_solitude_2.png)
+
 
 ### RTS Prototype
+Unit selection.
+![Unit selection](./repo/images/ant_rts_1.png)
 
-### ZDungeon
+Attacking enemy units.
+![Attacking](./repo/images/ant_rts_2.png)
 
 ## Features
 ### Ocean's Solitude
-- Main menu.
-- Adventure style game, where the player controls a fish with a few abilities and an enemy to fight.
+- Adventure style game, where the player controls a fish with a few abilities and an enemy.
 - Level created with Tiled.
 - Movement Logic for Player fish with abilities.
-- Enemy Fish Logic based on sight.
 
 ### RTS Prototype
 - Unit control with state machine that allows for commands like 'hold position', 'patrol' or 'attack'.
 - Unit selection for single units and multiple units and simple movement.
 - Enemy units you can attack.
 
-### ZDungeon
-- Create simple 2D dungeons with tiled.
-- Using editor scripts to generate logical connections between entities in the level. For example: connecting a switch to a door.
-- Character controller, that allows movement and sword fighting.
 
 ## Sources
 - [Tiled](https://www.mapeditor.org/): Used to create 2D tilemaps.
