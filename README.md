@@ -26,25 +26,27 @@ This includes:
 - Unity: 2019.4.39f1
 
 ## How To Run
-1. Exported Builds:
+- Exported Builds:
+
 Exported builds can be found in the `builds` directory. It includes windows exports for each projects. 
+
 
 ### Controls
 *Ocean's Solitude*:
-WASD: Move
-Shift: Dash
-Q: Inkcloud ability
-E: Inkbomb ability
+- WASD: Move
+- Shift: Dash
+- Q: Inkcloud ability
+- E: Inkbomb ability
 
 *RTS Prototype*:
-Left-Mouse Button: Select units, hold to create selection border.
-Right Mouse Button: Deselect units
-A: Attack Move (move to position, attack all enemies on the way).
-S: Stop current command
-H: Hold position
-P: Patrol between two points
-M: Move to position
-Escape: Open menu to quit.
+- Left-Mouse Button: Select units, hold to create selection border.
+- Right Mouse Button: Deselect units
+- A: Attack Move (move to position, attack all enemies on the way).
+- S: Stop current command
+- H: Hold position
+- P: Patrol between two points
+- M: Move to position
+- Escape: Open menu to quit.
 
 ## Illustrations
 ### Ocean's Solitude
